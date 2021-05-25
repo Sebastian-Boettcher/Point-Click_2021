@@ -10,13 +10,12 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-
     public void QuitGame ()
     {
         Debug.Log("Quit!");
         Application.Quit();
     }
-
+    //----------------------------------------------------------------------
     public void NewGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
@@ -29,7 +28,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
-
+    //------------------------------------------------------------------------
     public void Options()
     {
        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3); 
@@ -37,5 +36,21 @@ public class MainMenu : MonoBehaviour
     public void Options_Back() // Zurückknopf für Options
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
+    }
+    //--------------------------------------------------------------------------
+
+    public void Audio(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void AudioBack(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+    //-----------------------------------------------------------------------
+
+    public void Steuerung(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+    }
+    public void SteuerungBack(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 }
