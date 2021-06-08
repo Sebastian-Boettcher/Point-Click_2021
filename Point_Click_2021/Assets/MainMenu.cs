@@ -5,10 +5,19 @@ using UnityEngine.SceneManagement;
 using UnityEditor;
 
 public class MainMenu : MonoBehaviour
-{
+{    
+    public static int spielstände = 1;   
     public void PlayGame ()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
+           if(spielstände == 1)
+           {
+               SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);  
+           }
+           else if(spielstände < 1 || spielstände > 1){
+               SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
+           }
+           
+           
     }
     public void QuitGame ()
     {
