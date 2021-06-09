@@ -24,7 +24,7 @@ public class SaveGame : MonoBehaviour
         PlayerPrefs.SetString("GameNameKey", GameName);
     }
     /*
-    public void CountGames()
+    public int CountGames()
     {
       if(GameId >= 3){
         button.interactable =false;
@@ -32,6 +32,7 @@ public class SaveGame : MonoBehaviour
       else{
         GameId++;
         Debug.Log(GameId);
+        return GameId;
       }
     }
 
