@@ -6,24 +6,51 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/MainMenu/MainMenu.unity
     guid: ca28eea0757af394ba7aa84af3e6179d
   - enabled: 1
-    path: Assets/Scenes/Gamescene.unity
-    guid: 8378d6be19afa4843a90621e765f227c
-  - enabled: 1
-    path: Assets/Scenes/NewGame.unity
+    path: Assets/Scenes/MainMenu/NewGame.unity
     guid: 5b9f1dc77627e714bb00acb79b7678a7
   - enabled: 1
-    path: Assets/Scenes/OptionsMenu.unity
+    path: Assets/Scenes/MainMenu/NameGame.unity
+    guid: 48a22f5655769e74ba9cfed69a32e616
+  - enabled: 1
+    path: Assets/Scenes/MainMenu/OptionsMenu.unity
     guid: fcb78467b8b88da4b99aa4aec9d9c90a
   - enabled: 1
-    path: Assets/Scenes/AudioMenu.unity
+    path: Assets/Scenes/MainMenu/AudioMenu.unity
     guid: 3f2676ea6caa53b4ea0dc1ab8c1eaa87
   - enabled: 1
-    path: Assets/Scenes/SteuerungsMenu.unity
+    path: Assets/Scenes/MainMenu/SteuerungsMenu.unity
     guid: 1d56ae6396e684742b8a4bed8446cf5b
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/VorKneipe.unity
+    guid: 33c3aa3ecb66735489ac52d8b8e77b40
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Kneipe.unity
+    guid: fb384f71506a097409070f63ddb1fbad
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Toilette.unity
+    guid: 9c70209dc79d6df48b9960622edcd639
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Diebesgilde.unity
+    guid: fe01b0b25363d9c4995dae25d849c058
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Schmiede.unity
+    guid: 109db5830419d7f4c9de9c3b9e7241c8
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/VorHeiler.unity
+    guid: 79796b9f3d031bf46bc5275f6a2326c9
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Heiler.unity
+    guid: 171453513c9780c468ec7be2f703d2a6
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Tor_Oberstadt.unity
+    guid: 28bbd60ccadb66742b7c90ee2857b04c
+  - enabled: 1
+    path: "Assets/Scenes/GameScenes/Kr\xE4mer_Brunnen.unity"
+    guid: 49a808af90984c849bfda5509b820114
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/Hauptplatz.unity
+    guid: 5b81b668337a6cb41bfe085034053125
   m_configObjects: {}

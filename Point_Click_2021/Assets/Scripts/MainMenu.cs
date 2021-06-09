@@ -5,10 +5,19 @@ using UnityEngine.SceneManagement;
 using UnityEditor;
 
 public class MainMenu : MonoBehaviour
-{
+{    
+    public static int spielstände = 1;   
     public void PlayGame ()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+           if(spielstände == 1)
+           {
+               SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 6);  
+           }
+           else if(spielstände < 1 || spielstände > 1){
+               SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
+           }
+           
+           
     }
     public void QuitGame ()
     {
@@ -18,15 +27,15 @@ public class MainMenu : MonoBehaviour
     //----------------------------------------------------------------------
     public void NewGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     public void StartNewGame ()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
     }
     public void New_Back () // Zurückknopf für die Szene NewGame
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
     //------------------------------------------------------------------------
     public void Options()
@@ -47,10 +56,4 @@ public class MainMenu : MonoBehaviour
     }
     //-----------------------------------------------------------------------
 
-    public void Steuerung(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-    }
-    public void SteuerungBack(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
-    }
 }
