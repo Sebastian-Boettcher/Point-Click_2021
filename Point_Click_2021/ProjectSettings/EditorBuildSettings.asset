@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu/NewGame.unity
     guid: 5b9f1dc77627e714bb00acb79b7678a7
   - enabled: 1
+    path: Assets/Scenes/MainMenu/NameGame.unity
+    guid: 48a22f5655769e74ba9cfed69a32e616
+  - enabled: 1
     path: Assets/Scenes/MainMenu/OptionsMenu.unity
     guid: fcb78467b8b88da4b99aa4aec9d9c90a
   - enabled: 1

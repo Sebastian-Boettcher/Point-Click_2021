@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     {
            if(spielstände == 1)
            {
-               SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);  
+               SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 6);  
            }
            else if(spielstände < 1 || spielstände > 1){
                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); 
@@ -40,11 +40,11 @@ public class MainMenu : MonoBehaviour
     //------------------------------------------------------------------------
     public void Options()
     {
-       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2); 
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3); 
     }
     public void Options_Back() // Zurückknopf für Options
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
     }
     //--------------------------------------------------------------------------
 
@@ -56,10 +56,4 @@ public class MainMenu : MonoBehaviour
     }
     //-----------------------------------------------------------------------
 
-    public void Steuerung(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-    }
-    public void SteuerungBack(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
-    }
 }

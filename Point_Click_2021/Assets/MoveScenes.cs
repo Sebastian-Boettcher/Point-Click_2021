@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
-public class SceneChanger : MonoBehaviour
+public class MoveScenes : MonoBehaviour
 {
-   public void moveOneUp () {
+    public void moveOneUp () {
        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
    }
 
