@@ -5,16 +5,16 @@ using UnityEngine.UI;
 using UnityEditor;
 using UnityEngine.SceneManagement;
 
+
 public class ButtonListener : MonoBehaviour
 {
      public InputField inputText;
     public Text text_1, text_2, text_3;
-    public Button m_YourFirstButton, m_YourSecondButton, m_YourThirdButton;
+    public Button m_YourFirstButton, m_YourSecondButton, m_YourThirdButton, start, delete;
     string GameName_1;
     string GameName_2;
     string GameName_3;
 
-    public static int GameId = 0;
 
     void Start()
     {
@@ -25,20 +25,46 @@ public class ButtonListener : MonoBehaviour
       m_YourFirstButton.onClick.AddListener(SaveName_1);
       m_YourSecondButton.onClick.AddListener(SaveName_2);
       m_YourThirdButton.onClick.AddListener(SaveName_3);
-      
+
+      start.onClick.AddListener(StartGame);
+      delete.onClick.AddListener(delete_1);
+
       text_1.text = GameName_1;
       text_1.text = GameName_1;
       text_3.text = GameName_3;
-      
+    }
+
+    public void StartGame(){
+      //Laden des zuletzt gespeicherten Szenenindex: Je nach Stand des Spieles(Neuer Spielstand oder älterer Spielstand) wird eine unterschiedliche Szenegeladen
+      int lastindex = 5;//Nur zum Test
+
+     if(lastindex != 0){
+       SceneManager.LoadScene(lastindex);
+     }
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
+    }
+
+    public void delete_1(){
+      GameName_1 = "";
+      PlayerPrefs.SetString("GameNameKey_1", GameName_1);
+      Debug.Log("Spielstand 1 gelöscht");
+      m_YourFirstButton.interactable = true;
+      text_1.text = GameName_1;
     }
 
     public void SaveName_1()
     {
-      
-      GameName_1 = inputText.text;
-      PlayerPrefs.SetString("GameNameKey_1", GameName_1);
-      inputText.text = "";
-      text_1.text = GameName_1;
+         if(GameName_1 == "")
+      {
+        GameName_1 = inputText.text;
+        PlayerPrefs.SetString("GameNameKey_1", GameName_1);
+        inputText.text = "";
+        text_1.text = GameName_1;
+
+      }else{
+        Debug.Log("Speicherplatz belegt!");
+        m_YourFirstButton.interactable = false;
+      }
     }
 
     public void SaveName_2()

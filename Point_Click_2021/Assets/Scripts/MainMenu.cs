@@ -7,7 +7,7 @@ using UnityEditor;
 
 public class MainMenu : MonoBehaviour
 {    
-    public static int spielstände = 0;   
+    public static int spielstände = 1;   
     public void PlayGame ()
     {
            if(spielstände == 1)
