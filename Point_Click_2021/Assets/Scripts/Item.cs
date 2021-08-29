@@ -13,7 +13,12 @@ public class Item
         Bürste,
         Bierkrug,
         Bierkruege,
-        Wutpilz
+        Wutpilz,
+        BierKrug_voll,
+        BierKrug_mit_Wutpilz,
+        BierKruege_voll,
+        BierKruege_mit_Wutpilz,
+        Schwert_der_Koenige
     }
     public ItemType itemType;
     public int amount;
@@ -21,14 +26,22 @@ public class Item
     public Sprite GetSprite(){
         switch(itemType){
             default:
-            case ItemType.Rattenpuppe:         return ItemImages.Instance.RattenpuppeSprite;
-            case ItemType.farbige_Rattenpuppe: return ItemImages.Instance.farbige_RattenpuppeSprite;
-            case ItemType.Faden:               return ItemImages.Instance.FadenSprite;
-            case ItemType.Wolle:               return ItemImages.Instance.WolleSprite;
-            case ItemType.Bürste:              return ItemImages.Instance.BürsteSprite;
-            case ItemType.Bierkrug:            return ItemImages.Instance.BierKrugSprite;
-            case ItemType.Bierkruege:          return ItemImages.Instance.BierkruegeSprite;
-            case ItemType.Wutpilz:             return ItemImages.Instance.WutpilzSprite;
+            case ItemType.Rattenpuppe:            return ItemImages.Instance.Rattenpuppe;
+            case ItemType.farbige_Rattenpuppe:    return ItemImages.Instance.farbige_Rattenpuppe;
+
+            case ItemType.Bierkrug:               return ItemImages.Instance.BierKrug;
+            case ItemType.BierKrug_voll:          return ItemImages.Instance.BierKrug_voll;
+            case ItemType.BierKrug_mit_Wutpilz:   return ItemImages.Instance.BierKrug_mit_Wutpilz;
+
+            case ItemType.Bierkruege:             return ItemImages.Instance.Bierkruege;
+            case ItemType.BierKruege_voll:        return ItemImages.Instance.Bierkruege_voll;
+            case ItemType.BierKruege_mit_Wutpilz: return ItemImages.Instance.Bierkruege_mit_Wutpilz;
+
+            case ItemType.Wutpilz:                return ItemImages.Instance.Wutpilz;
+            case ItemType.Faden:                  return ItemImages.Instance.Faden;
+            case ItemType.Wolle:                  return ItemImages.Instance.Wolle;
+            case ItemType.Bürste:                 return ItemImages.Instance.Bürste;
+            case ItemType.Schwert_der_Koenige:    return ItemImages.Instance.Schwert_der_Koenige;
         }
     }
 }

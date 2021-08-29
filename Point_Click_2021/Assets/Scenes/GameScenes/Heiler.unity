@@ -751,7 +751,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Inventory: {fileID: 1293558010}
   invent: {fileID: 537989383}
-  items: {fileID: 0}
 --- !u!114 &1293558008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1107,8 +1106,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 805, y: -212}
-  m_SizeDelta: {x: 767.7714, y: 835.9105}
+  m_AnchoredPosition: {x: 914, y: -201}
+  m_SizeDelta: {x: 360.8122, y: 647.2538}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2028865552
 MonoBehaviour:

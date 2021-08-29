@@ -5,27 +5,46 @@ using UnityEngine;
 
 public class Savesystem 
 {
-    private static readonly string SAVE_FOLDER = Application.dataPath + "/Saves/";
+    //private static readonly string SAVE_FOLDER = Application.dataPath + "/Saves/";
+    private static readonly string GameOne = Application.dataPath + "/Saves/Game_1/";
+    private static readonly string GameTwo = Application.dataPath + "/Saves/Game_2/";
+    private static readonly string GameThree = Application.dataPath + "/Saves/Game_3/";
     private const string SAVE_EXTENSION = "txt";
+
+    private static string G_One = PlayerPrefs.GetString("GameNameKey_1");
+    private static string G_Two = PlayerPrefs.GetString("GameNameKey_2");
+    private static string G_Three = PlayerPrefs.GetString("GameNameKey_3") ;
+
 
     public static void Init(){
         //Prüfen ob Ordner existiert
-        if(!Directory.Exists(SAVE_FOLDER)){
+        if(!Directory.Exists(GameOne) || !Directory.Exists(GameTwo) || !Directory.Exists(GameThree)){
             //Neuer Ordner anlegen
-            Directory.CreateDirectory(SAVE_FOLDER);
+            Directory.CreateDirectory(GameOne);
+            Directory.CreateDirectory(GameTwo);
+            Directory.CreateDirectory(GameThree);
+        }/*
+        if(!Directory.Exists(GameTwo)){
+            //Neuer Ordner anlegen
+            Directory.CreateDirectory(GameTwo);
         }
+        if(!Directory.Exists(GameThree)){
+            //Neuer Ordner anlegen
+            Directory.CreateDirectory(GameThree);
+        }*/
     }
 
-    public static void Save(string SaveString) {
-        int saveNumber = 1;
-        while(File.Exists(SAVE_FOLDER + "save_" + saveNumber + "." + SAVE_EXTENSION)){
-            saveNumber++;
+    public static void Save(string SaveString) 
+    {   
+        int num = 1; 
+        while(File.Exists(GameOne + "save_" + num + "." + SAVE_EXTENSION)){
+            num++;
         }
-        File.WriteAllText(SAVE_FOLDER + "save_" + saveNumber + "." + SAVE_EXTENSION, SaveString);
+           File.WriteAllText(GameOne + "save_" + num +"." + SAVE_EXTENSION, SaveString); 
     }
 
      public static string Load() {
-        DirectoryInfo directoryInfo = new DirectoryInfo(SAVE_FOLDER);
+        DirectoryInfo directoryInfo = new DirectoryInfo(GameOne);
         // Get all save files
         FileInfo[] saveFiles = directoryInfo.GetFiles("*." + SAVE_EXTENSION);
         // Cycle through all save files and identify the most recent one

@@ -54,7 +54,7 @@ public class ButtonListener : MonoBehaviour
       delete_2.onClick.AddListener(delete_Game_2);
 
       start_3.onClick.AddListener(StartGame);
-      delete_3.onClick.AddListener(delete_Game_2);
+      delete_3.onClick.AddListener(delete_Game_3);
 
       text_1.text = GameName_1;
       text_1.text = GameName_1;
@@ -72,12 +72,7 @@ public class ButtonListener : MonoBehaviour
 
     public void StartGame(){
       //Laden des zuletzt gespeicherten Szenenindex: Je nach Stand des Spieles(Neuer Spielstand oder älterer Spielstand) wird eine unterschiedliche Szenegeladen
-      int lastindex = 0 ;//|| last_Scene;//Nur zum Test
-
-     if(lastindex != 0){
-       SceneManager.LoadScene(lastindex);
-     }
-      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 6);
     }
 
     public void SaveName_1()
@@ -119,7 +114,7 @@ public class ButtonListener : MonoBehaviour
         Debug.Log(mode);
        
         start_2.gameObject.SetActive(mode);
-        delete_3.gameObject.SetActive(mode);
+        delete_2.gameObject.SetActive(mode);
       }
       else{
         Debug.Log("Speicherplatz belegt!");
@@ -141,7 +136,7 @@ public class ButtonListener : MonoBehaviour
         bool mode = changing(s3_bool);
         Debug.Log(mode);
        
-        start_2.gameObject.SetActive(mode);
+        start_3.gameObject.SetActive(mode);
         delete_3.gameObject.SetActive(mode);
       }
       else{

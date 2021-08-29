@@ -455,8 +455,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -812.2676, y: 446.34363}
-  m_SizeDelta: {x: 333.1949, y: 141.2187}
+  m_AnchoredPosition: {x: -822.68, y: -446.23773}
+  m_SizeDelta: {x: 274.6213, y: 121.6942}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &260315884
 MonoBehaviour:
@@ -472,7 +472,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Inventory: {fileID: 260315887}
   invent: {fileID: 2122258258}
-  items: {fileID: 0}
 --- !u!114 &260315885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1431,6 +1430,7 @@ GameObject:
   - component: {fileID: 1831382316}
   - component: {fileID: 1831382318}
   - component: {fileID: 1831382317}
+  - component: {fileID: 1831382319}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1454,8 +1454,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 743, y: -181.3}
-  m_SizeDelta: {x: 927.2966, y: 985.12}
+  m_AnchoredPosition: {x: 300.98, y: -146}
+  m_SizeDelta: {x: 296.8499, y: 593.9609}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1831382317
 MonoBehaviour:
@@ -1495,6 +1495,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831382315}
   m_CullTransparentMesh: 1
+--- !u!114 &1831382319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831382315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2518e8f42f1374e98450bad09bfcc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiInventory: {fileID: 2122258260}
 --- !u!1 &2122258258
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,6 +1560,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49deffca0e3fa944490bc717611645e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemContainer: {fileID: 488515848}
+  itemTemplate: {fileID: 1718188820}
 --- !u!114 &2122258261
 MonoBehaviour:
   m_ObjectHideFlags: 0

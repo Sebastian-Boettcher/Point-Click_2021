@@ -252,7 +252,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Inventory: {fileID: 190194483}
   invent: {fileID: 1523487842}
-  items: {fileID: 0}
 --- !u!114 &190194481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,7 +794,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.028, y: -0}
+  m_AnchoredPosition: {x: 2.028, y: 0}
   m_SizeDelta: {x: 170.5526, y: 50.0639}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &948396236
@@ -909,7 +908,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 451882965}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -979,8 +978,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -589, y: -89}
-  m_SizeDelta: {x: 777.5055, y: 855.379}
+  m_AnchoredPosition: {x: -380, y: -200.02}
+  m_SizeDelta: {x: 332.08, y: 561.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1469707461
 MonoBehaviour:
@@ -1072,6 +1071,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49deffca0e3fa944490bc717611645e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemContainer: {fileID: 0}
+  itemTemplate: {fileID: 0}
 --- !u!114 &1523487845
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,16 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class MausklickErkennen : MonoBehaviour
 {
-    public Vector3 mausPos;
+    public Vector3 mousePos;
     public Camera mainCamera;
-    public Vector3 mausPosWorld;
+    public Vector3 mousePosWorld;
     RaycastHit2D hit;
-    public Vector2 mausPosWorld2D;
-    public GameObject Protagonist;
+    public Vector2 mousePosWorld2D;
+    public GameObject player;
+    public Vector2 targetPos;
+    public float speed;
+    public bool isMoving;
+
+    public int Items = 0;
 
 
+    // Start is called before the first frame update
     void Start()
     {
         
@@ -19,36 +26,111 @@ public class MausklickErkennen : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   //mausklick erkannt?
-       if(Input.GetMouseButtonDown(0))
+    {
+        // Wurde Maustaste gerï¿½ckt?
+        if (Input.GetMouseButtonDown(0))
         {
-            print("klick erkannt");
-            //Mausposition auslesen
-            mausPos = Input.mousePosition;
-            //Position auf konsole ausgeben
-            print("Screenspace: " + mausPos);
-            // Koordinaten von Screenspace nach Worldspache 
-            mausPosWorld= mainCamera.ScreenToWorldPoint(mausPos);
-            // worldspace koordinaten auf Unity ausgeben
-            print("Worldspace : " + mausPosWorld);
-            // Umwandlung von V3 in V2
-            mausPosWorld2D = new Vector2(mausPosWorld.x, mausPosWorld.y);
+            //Mausklick wurde erkannt
+            print("Mausklick erkannt");
 
-            //Raycast2D ==> Hit abspeichern
-            hit = Physics2D.Raycast(mausPosWorld2D, Vector2.zero);
-            // Prüfung ob hit was gehittet hat
+            //Position der Maus auslesen
+            mousePos = Input.mousePosition;
+            // Mauspositin ausgeben
+           // print("screenspace" + mousePos);
+
+            //von Screenspace auf Worldspace
+            mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
+            // Worldspace Koordinaten ausgeben
+           // print("worldspace" + mousePosWorld);
+
+            //Umwandlung von Vektor3 in Vektor2
+            mousePosWorld2D = new Vector2(mousePosWorld.x, mousePosWorld.y);
+
+            //Raycast abspichern
+            hit = Physics2D.Raycast(mousePosWorld2D, Vector2.zero);
+
+            //ï¿½berprï¿½fing ob hit einen Collider getroffen hat
             if(hit.collider != null)
             {
-                print("Objekt getroffen");
-                print(hit.collider.gameObject.tag);
-                // position des spielers verändern
-                Protagonist.transform.position = hit.point;
-            }
-            else
-            {
-                print("kein collider erkannt");
+                //print("Objekt mit Collider getroffen!");
+                //Name des getroffenen objekts ausgeben
+                print("Name:" +hit.collider.gameObject.tag);
+
+                //Abfrage ob es der Boden ist
+                if(hit.collider.gameObject.tag == "ground")
+                {
+                    //Position des Spielers verï¿½ndern
+                    // player.transform.position = hit.point;
+                    targetPos = hit.point;
+
+                    // isMoving auf true setzen
+                    isMoving = true;
+                    // ï¿½berprï¿½fe on Spriteflip notwendig
+                    CheckSpriteFlip();
+                }
+                else if(hit.collider.gameObject.tag == "Gabel")
+                {
+                    // Grafik deaktivieren
+                    hit.collider.gameObject.SetActive(false);
+                   
+                    Items = Items + 1;
+                }
+                else if(hit.collider.gameObject.tag == "Wirtin")
+                {
+                }
+                /*
+                else if(hit.collider.gameObject.tag == "faden"){
+                    Debug.Log("Das ist der Faden");
+                    Debug.Log("Test 1");
+                    hit.collider.gameObject.SetActive(false);
+                    //ItemWorld itemworld = collider.Get
+                    print("Test 2");
+                    Items = Items + 1;
+                }*/
             }
 
+            else
+            {
+                print("Kein Collider erkannt");
+            }
+            
+            
+        }
+        
+
+    }
+
+    private void FixedUpdate()
+    {
+        if (isMoving)
+        {
+            // Spieler an Zielort bewegen ohne Teleport
+            player.transform.position = Vector3.MoveTowards(player.transform.position, targetPos, speed);
+            print("Spieler wird bewegt");
+
+            // ist spieler am zielort
+            if(player.transform.position.x == targetPos.x && player.transform.position.y == targetPos.y)
+            {
+                isMoving = false;
+                print("Spieler am Ziel");
+            }
+        }
+        
+    }
+
+    void CheckSpriteFlip()
+    {
+        if(player.transform.position.x > targetPos.x)
+        {
+            //Nach links blicken
+            player.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else
+        {
+            //Nach rechts blicken
+            player.GetComponent<SpriteRenderer>().flipX = false;
         }
     }
 }
+
+

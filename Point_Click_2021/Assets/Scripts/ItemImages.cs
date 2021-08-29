@@ -12,14 +12,20 @@ public class ItemImages : MonoBehaviour
         Instance = this;
     }
 
-    public Sprite FadenSprite;
-    public Sprite RattenpuppeSprite;
-    public Sprite farbige_RattenpuppeSprite;
-    public Sprite BierKrugSprite;
-    public Sprite BierkruegeSprite;
-    public Sprite BürsteSprite;
-    public Sprite WolleSprite;
-    public Sprite WutpilzSprite;
+    public Sprite Faden;
+    public Sprite Rattenpuppe;
+    public Sprite farbige_Rattenpuppe;
+    public Sprite BierKrug;
+    public Sprite BierKrug_voll;
+    public Sprite BierKrug_mit_Wutpilz;
+    public Sprite Bierkruege;
+    public Sprite Bierkruege_voll;
+    public Sprite Bierkruege_mit_Wutpilz;
+    public Sprite Bürste;
+    public Sprite Wolle;
+    public Sprite Wutpilz;
+    public Sprite Elfenhalskette;
+    public Sprite Schwert_der_Koenige;
     
 
 }

@@ -1,20 +1,34 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using System;
+using UnityEditor;
+using System.IO;
 using UnityEngine;
 
-public interface IUnit
-{
-   Vector2 GetPosition();
-   void SetPosition(Vector2 position);
+public class GameInfo: MonoBehaviour {
+   
+   public Vector2 Get_Position(){
+      Vector2 player = GameObject.Find("Player").transform.position;
+      return player;
+   }
+   public void Set_Position(Vector2 position){
+      GameObject.Find("Player").transform.position = position;
+   }
 
-   int GetInv_Amount();
+   private List<Item> itemList;
+  /* public int GetInv_Amount(){
+
+   }
    void Setinv_Amount(int inv_Amount);
 
-   string [] GetItems();
+   List<Item> GetItems();
    void SetItems(string [] Items);
 
-   int Get_LastScene();
-   void SetlastScene(int last_scene);
-
+   public int Get_LastScene(){
+      int l_scene = SceneManager.GetActiveScene().buildIndex;
+      return l_scene;
+   }
+   public void SetlastScene(int last_scene){
+      SceneManager.LoadScene(last_scene);
+   }*/
 }

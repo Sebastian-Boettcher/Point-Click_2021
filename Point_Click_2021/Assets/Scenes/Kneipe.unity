@@ -368,11 +368,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ccc4b53b08cbd14cade1120957c6061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mausPos: {x: 0, y: 0, z: 0}
+  mousePos: {x: 0, y: 0, z: 0}
   mainCamera: {fileID: 576244600}
-  mausPosWorld: {x: 0, y: 0, z: 0}
-  mausPosWorld2D: {x: 0, y: 0}
-  Protagonist: {fileID: 1496642316}
+  mousePosWorld: {x: 0, y: 0, z: 0}
+  mousePosWorld2D: {x: 0, y: 0}
+  player: {fileID: 1496642316}
+  targetPos: {x: 0, y: 0}
+  speed: 0
+  isMoving: 0
+  Items: 0
 --- !u!61 &1496642320
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -495,11 +499,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ccc4b53b08cbd14cade1120957c6061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mausPos: {x: 0, y: 0, z: 0}
+  mousePos: {x: 0, y: 0, z: 0}
   mainCamera: {fileID: 576244600}
-  mausPosWorld: {x: 0, y: 0, z: 0}
-  mausPosWorld2D: {x: 0, y: 0}
-  Protagonist: {fileID: 0}
+  mousePosWorld: {x: 0, y: 0, z: 0}
+  mousePosWorld2D: {x: 0, y: 0}
+  player: {fileID: 1496642316}
+  targetPos: {x: 0, y: 0}
+  speed: 0
+  isMoving: 0
+  Items: 0
 --- !u!60 &1519678965
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -563,7 +571,7 @@ Transform:
   m_Children:
   - {fileID: 1519678962}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1736540344
 GameObject:
@@ -594,5 +602,5 @@ Transform:
   m_Children:
   - {fileID: 1496642317}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
