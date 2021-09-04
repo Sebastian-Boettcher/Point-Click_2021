@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {  
-  [SerializeField] private UI_Inventory uiInventory;  
-   private Inventory inventory;
-   
+  public Texture2D cursorTexture;
+  public CursorMode cursorMode = CursorMode.Auto;
+  public Vector2 hotSpot = Vector2.zero;
+
   private void Awake() {
-      inventory = new Inventory();   
-      uiInventory.SetInventory(inventory);
+    Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
   }
 }

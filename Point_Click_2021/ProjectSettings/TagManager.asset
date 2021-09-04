@@ -7,6 +7,7 @@ TagManager:
   - Play_Pos
   - ground
   - faden
+  - Inventory
   layers:
   - Default
   - TransparentFX

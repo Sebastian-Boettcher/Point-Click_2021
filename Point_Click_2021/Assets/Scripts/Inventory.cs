@@ -4,16 +4,12 @@ using UnityEngine;
 using System;
 public class Inventory
 {
+    public event EventHandler OnItemListChanged;
     private List<Item> itemList;
     
     public Inventory(){
         itemList = new List<Item>();
-
-        AddItem(new Item{itemType = Item.ItemType.Faden, amount = 1});
-        AddItem(new Item{itemType = Item.ItemType.Wutpilz, amount = 1});
-        AddItem(new Item{itemType = Item.ItemType.Schwert_der_Koenige, amount = 1});
-        AddItem(new Item{itemType = Item.ItemType.Bierkrug, amount = 1});
-
+        
         if(ItemAmount()>=16){
             Debug.Log("Keine Platz mehr!");
          }
@@ -25,10 +21,13 @@ public class Inventory
 
     public void AddItem(Item item){
         itemList.Add(item);
-        //OnListChanged?.Invoke(this, EventArgs.Empty);
+        OnItemListChanged?.Invoke(this, EventArgs.Empty);
     }
     public List<Item> GetItemList(){
         return itemList;
+    }
+    public void CombineItems(Item Give, Item Get){
+        
     }
 
 }

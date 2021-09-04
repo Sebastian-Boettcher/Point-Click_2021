@@ -12,14 +12,10 @@ public class ItemWorld : MonoBehaviour
     private void Awake() {
         inventory = new Inventory();
     }
-    
-   public Item Return_Item(){
-        Debug.Log("Added Item");
-        inventory.AddItem(new Item{itemType = Item.ItemType.Faden, amount = 1});
+   public Item GetItem(){
         return item;
    }
     public void DestroySelf(){
-        
         inventory.AddItem(new Item{itemType = Item.ItemType.Faden, amount = 1});
         Destroy(gameObject);
     }
