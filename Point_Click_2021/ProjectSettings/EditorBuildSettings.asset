@@ -51,9 +51,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScenes/Tor_Oberstadt.unity
     guid: 28bbd60ccadb66742b7c90ee2857b04c
   - enabled: 1
-    path: "Assets/Scenes/GameScenes/Kr\xE4mer_Brunnen.unity"
+    path: "Assets/Scenes/GameScenes/Nicht verwendet/Kr\xE4mer_Brunnen.unity"
     guid: 49a808af90984c849bfda5509b820114
   - enabled: 1
-    path: Assets/Scenes/GameScenes/Hauptplatz.unity
+    path: Assets/Scenes/GameScenes/Nicht verwendet/Hauptplatz.unity
     guid: 5b81b668337a6cb41bfe085034053125
   m_configObjects: {}

@@ -10,6 +10,10 @@ public class Inventory
     public Inventory(){
         itemList = new List<Item>();
         
+        AddItem(new Item{itemType = Item.ItemType.Faden, amount = 1});
+        AddItem(new Item{itemType = Item.ItemType.Wutpilz, amount = 1});
+        AddItem(new Item{itemType = Item.ItemType.Bürste, amount = 1});
+        AddItem(new Item{itemType = Item.ItemType.Bierkrug, amount = 1});
         if(ItemAmount()>=16){
             Debug.Log("Keine Platz mehr!");
          }

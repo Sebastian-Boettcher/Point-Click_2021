@@ -1301,7 +1301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b4d43b76b986f4b9aae72584ea76e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  canvas: {fileID: 1408071401}
 --- !u!114 &957543854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2445,7 +2445,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2099462709}
         m_TargetAssemblyTypeName: InventorySteuerung, Assembly-CSharp
-        m_MethodName: show_hide_Inv
+        m_MethodName: show_hide_PMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
