@@ -8,6 +8,7 @@ TagManager:
   - ground
   - faden
   - Inventory
+  - Anton
   layers:
   - Default
   - TransparentFX

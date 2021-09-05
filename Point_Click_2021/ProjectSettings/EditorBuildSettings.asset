@@ -30,8 +30,8 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScenes/VorKneipe.unity
     guid: 33c3aa3ecb66735489ac52d8b8e77b40
   - enabled: 1
-    path: Assets/Scenes/GameScenes/Kneipe.unity
-    guid: fb384f71506a097409070f63ddb1fbad
+    path: Assets/Scenes/GameScenes/New_Kneipe.unity
+    guid: 2a20f798c900bef4482152da48db796f
   - enabled: 1
     path: Assets/Scenes/GameScenes/Toilette.unity
     guid: 9c70209dc79d6df48b9960622edcd639
