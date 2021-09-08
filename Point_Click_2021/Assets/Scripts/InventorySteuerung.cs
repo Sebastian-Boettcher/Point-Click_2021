@@ -8,34 +8,13 @@ public class InventorySteuerung : MonoBehaviour
     public Button Inventory;
     public GameObject invent;
 
-    void PauseGame ()
-    {
-        Time.timeScale = 0;
-    }
-
-    void ResumeGame ()
-    {
-        Time.timeScale = 1;
-    }
-
     public void show_hide_Inv(){
-        if(invent.activeSelf){  
+        if(invent.activeSelf){
+            Debug.Log("Ist Aktiv und wird ausgeschaltet!");   
             invent.SetActive(false);
-            ResumeGame();
         } else {
+            Debug.Log("Ist NOT Aktiv und wird eingeschaltet!");
             invent.SetActive(true);
-            PauseGame();
         }
     }
-
-    public void show_hide_PMenu(){
-        if(invent.activeSelf){   
-            invent.SetActive(false);
-            ResumeGame();
-        } else {
-            invent.SetActive(true);
-            PauseGame();
-        }
-    }
-
 }

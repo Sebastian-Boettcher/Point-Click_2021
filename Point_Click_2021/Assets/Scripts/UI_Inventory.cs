@@ -25,9 +25,9 @@ public class UI_Inventory : MonoBehaviour
       if(child == itemTemplate) continue;
       Destroy(child.gameObject);
     }
-    float x = -1.5f;
-    float y = 1.7f;
-    float itemSlotCellSize = 120f ;  
+    float x = -1.47f;
+    float y = 1.4f;
+    float itemSlotCellSize = 240f ;  
     foreach (Item item in inventory.GetItemList())
     {
         RectTransform itemSlot = Instantiate(itemTemplate, itemContainer).GetComponent<RectTransform>();//X
@@ -37,8 +37,7 @@ public class UI_Inventory : MonoBehaviour
         image.sprite = item.GetSprite();
         x++;
         
-      if(x > 5f){
-          x = -1.5f;
+      if(x > 4.2f){
           y--;  
         }
     }
