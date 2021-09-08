@@ -9,6 +9,23 @@ TagManager:
   - faden
   - Inventory
   - Anton
+  - Tuersteher
+  - Ofen
+  - Schmied
+  - DiebbossAnfang
+  - Dieb
+  - Truhe
+  - Sixnine
+  - Pilze
+  - Heiler
+  - Schlaeger
+  - Koch
+  - Topf
+  - Tuer
+  - "T\xFCr"
+  - Gilli
+  - Wirtin
+  - Elb
   layers:
   - Default
   - TransparentFX

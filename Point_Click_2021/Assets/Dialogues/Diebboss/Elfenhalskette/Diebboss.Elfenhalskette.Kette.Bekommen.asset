@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6826b4afea71df347b4f65360f61916c, type: 3}
+  m_Name: Diebboss.Elfenhalskette.Kette.Bekommen
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - myName: "Anf\xFChrer"
+    myText: Es besteht eine Verbindung zwischen Oberstadt und Unterstadt.
+    portrait: {fileID: 21300000, guid: b635ee51ead68c2419f327aaf5d45992, type: 3}
+  - myName: "Anf\xFChrer"
+    myText: 'Geh zum Brunnen neben dem Tor zu Oberstadt. '
+    portrait: {fileID: 21300000, guid: b635ee51ead68c2419f327aaf5d45992, type: 3}
+  - myName: "Anf\xFChrer"
+    myText: Dort wirst du einen geheimen Schalter finden.
+    portrait: {fileID: 21300000, guid: b635ee51ead68c2419f327aaf5d45992, type: 3}
+  - myName: "Anf\xFChrer"
+    myText: "Dr\xFCckst du diesen wird sich ein geheimer Gang im inneren des Tunnels
+      \xF6ffnen."
+    portrait: {fileID: 21300000, guid: b635ee51ead68c2419f327aaf5d45992, type: 3}
+  - myName: "Anf\xFChrer"
+    myText: "Dieser f\xFChrt dich direkt in den Brunnen der Oberstadt."
+    portrait: {fileID: 21300000, guid: b635ee51ead68c2419f327aaf5d45992, type: 3}
+  - myName: Protagonist
+    myText: Vielen Dank!
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  questionText: 
+  optionsInfo:
+  - buttonName: Ich hab die Kette.
+    nextDialogue: {fileID: 11400000}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - buttonName: Ich muss dann mal weiter.
+    nextDialogue: {fileID: 11400000, guid: c27478daab310c04bac7a82d1453a0fe, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []

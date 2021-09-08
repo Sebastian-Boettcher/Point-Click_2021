@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6826b4afea71df347b4f65360f61916c, type: 3}
+  m_Name: SixNine.Streit
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - myName: Protagonist
+    myText: "Hast du eine Idee wie ich Antons Begleiter zum streiten bringen k\xF6nnte?"
+    portrait: {fileID: 21300000, guid: 03bf32946d6d88a49b0ac46f4e7d78c3, type: 3}
+  - myName: Dieb
+    myText: Du machst dir vielleicht Gedanken.
+    portrait: {fileID: 21300000, guid: c3947a4920c792d4abf0daa2c97541f1, type: 3}
+  - myName: Dieb
+    myText: Mir ist das ganze viel zu anstrengend.
+    portrait: {fileID: 21300000, guid: c3947a4920c792d4abf0daa2c97541f1, type: 3}
+  - myName: Dieb
+    myText: Warte einfach, irgendwann streiten sie sich schon von alleine.
+    portrait: {fileID: 21300000, guid: c3947a4920c792d4abf0daa2c97541f1, type: 3}
+  - myName: Protagonist
+    myText: Und das funktioniert?
+    portrait: {fileID: 21300000, guid: 03bf32946d6d88a49b0ac46f4e7d78c3, type: 3}
+  - myName: Dieb
+    myText: 'Was meinst du wie ich mein Brot verdiene? '
+    portrait: {fileID: 21300000, guid: c3947a4920c792d4abf0daa2c97541f1, type: 3}
+  - myName: Dieb
+    myText: Ich warte einfach.
+    portrait: {fileID: 21300000, guid: c3947a4920c792d4abf0daa2c97541f1, type: 3}
+  - myName: Dieb
+    myText: Irgendwann gibt es immer eine gute Gelegenheit.
+    portrait: {fileID: 21300000, guid: c3947a4920c792d4abf0daa2c97541f1, type: 3}
+  - myName: Protagonist
+    myText: Da habe ich leider nicht die Zeit dazu.
+    portrait: {fileID: 21300000, guid: 03bf32946d6d88a49b0ac46f4e7d78c3, type: 3}
+  - myName: Protagonist
+    myText: "Ich werde etwas anderes versuchen m\xFCssen."
+    portrait: {fileID: 21300000, guid: 03bf32946d6d88a49b0ac46f4e7d78c3, type: 3}
+  - myName: Dieb
+    myText: Wenn du meinst.
+    portrait: {fileID: 21300000, guid: c3947a4920c792d4abf0daa2c97541f1, type: 3}
+  questionText: 
+  optionsInfo:
+  - buttonName: Du siehst aber gelangweilt aus.
+    nextDialogue: {fileID: 11400000}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: "Hast du eine Idee wie ich Antons Begleiter zum streiten bringen
+      k\xF6nnte?"
+    nextDialogue: {fileID: 11400000}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Ich muss dann mal weiter.
+    nextDialogue: {fileID: 11400000, guid: 27cf15319332f314899f8ad0d6443741, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []

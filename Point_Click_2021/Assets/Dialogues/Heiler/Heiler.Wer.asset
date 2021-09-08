@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6826b4afea71df347b4f65360f61916c, type: 3}
+  m_Name: Heiler.Wer
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - myName: Protagonist
+    myText: Und wer bist du, wenn ich fragen darf?
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  - myName: Heiler
+    myText: Ich bin ein Freund.
+    portrait: {fileID: 21300000, guid: 6d5a4ad039f876a40be0c9320dc59ff4, type: 3}
+  - myName: Heiler
+    myText: "Wenn du Pilze, Kr\xE4uter oder andere Wundermittel brauchst, bin ich
+      der richtige."
+    portrait: {fileID: 21300000, guid: 6d5a4ad039f876a40be0c9320dc59ff4, type: 3}
+  questionText: 
+  optionsInfo:
+  - buttonName: Und wer bist du, wenn ich fragen darf?
+    nextDialogue: {fileID: 11400000}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Ich muss zwei Leute dazu bringen sich zu streiten.
+    nextDialogue: {fileID: 11400000, guid: 580673733db836241836ea4b980a7d86, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Ich muss dann mal weiter.
+    nextDialogue: {fileID: 11400000, guid: 4ac12e504ccd0af45b20263e2c7118d5, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6826b4afea71df347b4f65360f61916c, type: 3}
+  m_Name: Anton.Wer.ZwergElf
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - myName: Protagonist
+    myText: Ihr reist mit einem Zwerg und einem Elfen?
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  - myName: Protagonist
+    myText: "Eine sehr ungew\xF6hnliche Kombination."
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  - myName: Anton
+    myText: Die beiden sind Leo-Lars und Gilli und sind meine treusten Begleiter.
+    portrait: {fileID: 21300000, guid: 7f334f528a42d7e4d89b0dea3c4fda18, type: 3}
+  questionText: 
+  optionsInfo:
+  - buttonName: "Was treibt einen K\xF6nig in diese Stadt?"
+    nextDialogue: {fileID: 11400000, guid: c08514cd1a2ec484a876504a20310ce3, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: "Ein K\xF6nig?"
+    nextDialogue: {fileID: 11400000, guid: 67b897ea587a4d04fbd4c4a609d83fbf, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Ihr reist mit einem Zwerg und einem Elfen?
+    nextDialogue: {fileID: 11400000}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Auf Wiedersehen.
+    nextDialogue: {fileID: 11400000, guid: 1e3ef6db846f4444b94fc44ffb1c4df8, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []

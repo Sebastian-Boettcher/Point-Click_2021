@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6826b4afea71df347b4f65360f61916c, type: 3}
+  m_Name: Heiler.Streit
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - myName: Protagonist
+    myText: Ich muss zwei Leute dazu bringen sich zu streiten.
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  - myName: Heiler
+    myText: Das trifft sich ja gut.
+    portrait: {fileID: 21300000, guid: 6d5a4ad039f876a40be0c9320dc59ff4, type: 3}
+  - myName: Heiler
+    myText: Gerade heute habe ich ein paar seltene Wutpilze aus dem Streitwald geliefert
+      bekommen.
+    portrait: {fileID: 21300000, guid: 6d5a4ad039f876a40be0c9320dc59ff4, type: 3}
+  - myName: Heiler
+    myText: "Wenn du mir einen gefallen tust, w\xFCrde ich dir eventuell ein paar
+      abgeben."
+    portrait: {fileID: 21300000, guid: 6d5a4ad039f876a40be0c9320dc59ff4, type: 3}
+  - myName: Protagonist
+    myText: "Was kann ich f\xFCr dich tun?"
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  - myName: Heiler
+    myText: Schau mal aus dem Fenster.
+    portrait: {fileID: 21300000, guid: 6d5a4ad039f876a40be0c9320dc59ff4, type: 3}
+  - myName: Heiler
+    myText: "Ich wei\xDF nicht was der da will, aber er macht mir Angst."
+    portrait: {fileID: 21300000, guid: 6d5a4ad039f876a40be0c9320dc59ff4, type: 3}
+  - myName: Heiler
+    myText: "Au\xDFerdem verschreckt er meine Kunden."
+    portrait: {fileID: 21300000, guid: 6d5a4ad039f876a40be0c9320dc59ff4, type: 3}
+  - myName: Heiler
+    myText: "Sorge daf\xFCr, dass er verschwindet, egal wie du das anstellst."
+    portrait: {fileID: 21300000, guid: 6d5a4ad039f876a40be0c9320dc59ff4, type: 3}
+  - myName: Protagonist
+    myText: Ich werde sehen was ich tun kann.
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  questionText: 
+  optionsInfo:
+  - buttonName: Und wer bist du, wenn ich fragen darf?
+    nextDialogue: {fileID: 11400000, guid: 69ad8752c6d7abd4e8580385f40b5275, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Ich muss zwei Leute dazu bringen sich zu streiten.
+    nextDialogue: {fileID: 11400000}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Ich muss dann mal weiter.
+    nextDialogue: {fileID: 11400000, guid: 4ac12e504ccd0af45b20263e2c7118d5, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
