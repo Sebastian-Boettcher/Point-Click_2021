@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca7cd34719b4094ebc5266e4f19fc5f, type: 3}
+  m_Name: Dieb
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - myName: Protagonist
+    myText: "Gr\xFC\xDF dich."
+    portrait: {fileID: 21300000, guid: 03bf32946d6d88a49b0ac46f4e7d78c3, type: 3}
+  - myName: Dieb
+    myText: Noch so'n Spruch und ich raub dich aus.
+    portrait: {fileID: 21300000, guid: 79549c71d2a00584cbebc88994b6cb6c, type: 3}
+  - myName: Protagonist
+    myText: Was?
+    portrait: {fileID: 21300000, guid: 03bf32946d6d88a49b0ac46f4e7d78c3, type: 3}
+  - myName: Dieb
+    myText: 'Entschuldige. '
+    portrait: {fileID: 21300000, guid: 79549c71d2a00584cbebc88994b6cb6c, type: 3}
+  - myName: Dieb
+    myText: Alte Gewohnheit.
+    portrait: {fileID: 21300000, guid: 79549c71d2a00584cbebc88994b6cb6c, type: 3}
+  - myName: Protagonist
+    myText: Okay...
+    portrait: {fileID: 21300000, guid: 03bf32946d6d88a49b0ac46f4e7d78c3, type: 3}
+  - myName: Dieb
+    myText: Gib mir deine Schuhe.
+    portrait: {fileID: 21300000, guid: 79549c71d2a00584cbebc88994b6cb6c, type: 3}
+  - myName: Protagonist
+    myText: Ich geh dann mal.
+    portrait: {fileID: 21300000, guid: 03bf32946d6d88a49b0ac46f4e7d78c3, type: 3}

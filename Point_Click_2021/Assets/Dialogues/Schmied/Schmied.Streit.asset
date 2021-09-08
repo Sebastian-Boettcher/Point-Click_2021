@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6826b4afea71df347b4f65360f61916c, type: 3}
+  m_Name: Schmied.Streit
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - myName: Protagonist
+    myText: Hast du eine Idee wie man zwei Freunde zum Streiten bringen kann?
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  - myName: Schmied
+    myText: "F\xFCr gew\xF6hnlich nehme ich daf\xFCr meinen Hammer."
+    portrait: {fileID: 21300000, guid: fc72a47f7d8023d49b338c8445707cb5, type: 3}
+  - myName: Schmied
+    myText: Ein paar gezielte Hiebe und fertig.
+    portrait: {fileID: 21300000, guid: fc72a47f7d8023d49b338c8445707cb5, type: 3}
+  - myName: Protagonist
+    myText: Aber wo ist dann der Streit?
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  - myName: Schmied
+    myText: Der Trick liegt darin es aussehen zu lassen, als hat der jeweils andere
+      zugeschlagen.
+    portrait: {fileID: 21300000, guid: fc72a47f7d8023d49b338c8445707cb5, type: 3}
+  - myName: Protagonist
+    myText: Ich denke ich versuche lieber etwas anderes.
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  questionText: 
+  optionsInfo:
+  - buttonName: Kannst du mir das Schmieden beibringen?
+    nextDialogue: {fileID: 11400000, guid: 174afa097933f0e4096631710594f47f, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Hast du eine Idee wie man zwei Freunde zum Streiten bringen kann?
+    nextDialogue: {fileID: 11400000}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Ich geh' dann mal weiter.
+    nextDialogue: {fileID: 11400000, guid: a1c8cb7a3d819c846badf37c597b43e0, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6826b4afea71df347b4f65360f61916c, type: 3}
+  m_Name: Leo.ZwergElf
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - myName: Protagonist
+    myText: Wie kommt es, dass ein Elf mit einem Zwerg unterwegs ist?
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  - myName: Leo-Lars
+    myText: Gilli ist eine der treusten Seelen, die ich bislang kennenlernen durfte.
+    portrait: {fileID: 21300000, guid: 311f910c60cde6c479f3117680bb4085, type: 3}
+  - myName: Leo-Lars
+    myText: Leider ist gerade das Wort Treue unter den Zwergen eher ein Fremdwort.
+    portrait: {fileID: 21300000, guid: 311f910c60cde6c479f3117680bb4085, type: 3}
+  - myName: Leo-Lars
+    myText: "Unter ihnen ist sich jeder selbst der n\xE4chste."
+    portrait: {fileID: 21300000, guid: 311f910c60cde6c479f3117680bb4085, type: 3}
+  - myName: Gilli
+    myText: So ein Unsinn!
+    portrait: {fileID: 21300000, guid: 37b2fb0696926eb4b9bbc998fb41897f, type: 3}
+  - myName: Leo-Lars
+    myText: Warum denn Unsinn?
+    portrait: {fileID: 21300000, guid: 311f910c60cde6c479f3117680bb4085, type: 3}
+  - myName: Gilli
+    myText: Gerade wir Zwerge sind unserem Volk und der Heimat treu ergeben.
+    portrait: {fileID: 21300000, guid: 37b2fb0696926eb4b9bbc998fb41897f, type: 3}
+  - myName: Gilli
+    myText: "H\xF6r auf mein Volk in den Dreck zu ziehen!"
+    portrait: {fileID: 21300000, guid: 37b2fb0696926eb4b9bbc998fb41897f, type: 3}
+  - myName: Leo-Lars
+    myText: "Das wird nicht weiter n\xF6tig sein, dreckig seid ihr ohnehin schon."
+    portrait: {fileID: 21300000, guid: 311f910c60cde6c479f3117680bb4085, type: 3}
+  - myName: Gilli
+    myText: Na warte!
+    portrait: {fileID: 21300000, guid: 37b2fb0696926eb4b9bbc998fb41897f, type: 3}
+  - myName: Anton
+    myText: Genug! Beruhigt euch Freunde!
+    portrait: {fileID: 21300000, guid: 7f334f528a42d7e4d89b0dea3c4fda18, type: 3}
+  questionText: 
+  optionsInfo:
+  - buttonName: Wer seid Ihr?
+    nextDialogue: {fileID: 11400000, guid: e2b0f65beed6ecb4daacf6e6c9315c4d, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Wie kommt es, dass ein Elf mit einem Zwerg unterwegs ist?
+    nextDialogue: {fileID: 11400000}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Ich muss dann mal weiter.
+    nextDialogue: {fileID: 11400000, guid: d5e870469eb2656488ff81bf79c0ca5a, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6826b4afea71df347b4f65360f61916c, type: 3}
+  m_Name: Torwache.Vertrauen
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - myName: Protagonist
+    myText: Wie kann ich das Vertrauen der Stadt gewinnen?
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  - myName: Torwache
+    myText: "Daf\xFCr ist es zu sp\xE4t!"
+    portrait: {fileID: 21300000, guid: 34929b8ec1913214586ecb696885dc0a, type: 3}
+  - myName: Torwache
+    myText: Wir haben dir als du neu in die Stadt kamst eine Chance gegeben.
+    portrait: {fileID: 21300000, guid: 34929b8ec1913214586ecb696885dc0a, type: 3}
+  - myName: Torwache
+    myText: "Die Tatsache, dass du dich dagegen entschieden hast zeigt, dass wir
+      dich im Auge behalten m\xFCssen."
+    portrait: {fileID: 21300000, guid: 34929b8ec1913214586ecb696885dc0a, type: 3}
+  - myName: Protagonist
+    myText: Verstehe.
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  questionText: 
+  optionsInfo:
+  - buttonName: Warum darf ich nicht in die Oberstadt?
+    nextDialogue: {fileID: 11400000, guid: 25ae7b7825b0f72499b95e2f1cf553c3, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Wie kann ich das Vertrauen der Stadt gewinnen?
+    nextDialogue: {fileID: 11400000}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Ich muss dann mal weiter.
+    nextDialogue: {fileID: 11400000, guid: dc78a5557061d2d4aaa07d663d4dd3b0, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []

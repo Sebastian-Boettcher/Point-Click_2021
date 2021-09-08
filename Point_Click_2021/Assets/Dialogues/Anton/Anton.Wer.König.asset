@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6826b4afea71df347b4f65360f61916c, type: 3}
+  m_Name: "Anton.Wer.K\xF6nig"
+  m_EditorClassIdentifier: 
+  dialogueInfo:
+  - myName: Protagonist
+    myText: "Ein K\xF6nig? "
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  - myName: Protagonist
+    myText: "Dann habt ihr bestimmt wertvolle Sch\xE4tze bei Euch. Schmuck zum Beispiel?"
+    portrait: {fileID: 21300000, guid: 0a4c4e2d7c26c2d4885f37c58f163010, type: 3}
+  - myName: Anton
+    myText: "Ich ben\xF6tige keinen pomp\xF6sen Schmuck um mich wichtig zu f\xFChlen."
+    portrait: {fileID: 21300000, guid: 7f334f528a42d7e4d89b0dea3c4fda18, type: 3}
+  - myName: Anton
+    myText: Den einzigen Schmuck den ich bei mir trage ist die Kette, welche ich
+      unter meinem Gewand trage.
+    portrait: {fileID: 21300000, guid: 7f334f528a42d7e4d89b0dea3c4fda18, type: 3}
+  - myName: Anton
+    myText: Sie ist ein Geschenk meiner Frau.
+    portrait: {fileID: 21300000, guid: 7f334f528a42d7e4d89b0dea3c4fda18, type: 3}
+  questionText: 
+  optionsInfo:
+  - buttonName: "Was treibt einen K\xF6nig in diese Stadt?"
+    nextDialogue: {fileID: 11400000, guid: c08514cd1a2ec484a876504a20310ce3, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: "Ein K\xF6nig?"
+    nextDialogue: {fileID: 11400000}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Ihr reist mit einem Zwerg und einem Elfen?
+    nextDialogue: {fileID: 11400000, guid: 562fe72177b659f4c8f491439f6e552a, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - buttonName: Auf Wiedersehen.
+    nextDialogue: {fileID: 11400000, guid: 1e3ef6db846f4444b94fc44ffb1c4df8, type: 2}
+    myEvent:
+      m_PersistentCalls:
+        m_Calls: []
